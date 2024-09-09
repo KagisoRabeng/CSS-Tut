@@ -1,13 +1,7 @@
-const example = document.getElementById("example")
+const example = document.getElementById("eg")
 
-butto.addEventListener(
-    'click',
-    () => {
-        const newElement = document.createElement('p');
-        
-        newElement.textContent = "You have created a new element!";
-
-        
-        example.appendChild(newElement);
-    }
-)
+button.addEventListener('click', () => {
+   const message = document.createElement('p');
+    message.textContent = "Boop!"
+    example.appendChild(message)
+}) 
