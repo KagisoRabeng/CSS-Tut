@@ -2,19 +2,14 @@
  const formMessage = document.getElementById("formMessage");
 
  form.addEventListener('submit', (event) => {
-    event.preventDefault();
+    event.preventDefault(); //Prevents the form from throwing an error after submission
 
-    const name = document.getElementById("name").value;
+    const name = document.getElementById("name").value; //Value returns or gets an input value
     const email = document.getElementById("email").value;
 
-    if(!email || !name) {
-        formMessage.textContent = "Fill in the missing part(s)";
-        return;
-    };
+    formMessage.textContent = "Form Submitted Successfully!"; //textContent is similar to innerHTML
 
-    console.log(`Name: ${name}, Email: ${email}`)
-    formMessage.textContent = "Form Submitted Successfully!";
-
-    window.location.href = './profile.html';
+    window.location.href = 'mainPage.html';
  });
 
+ 
